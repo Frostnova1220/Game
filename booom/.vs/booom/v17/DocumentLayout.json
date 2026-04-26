@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\_entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\_entity\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\camerascript\\cameraflollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\camerascript\\cameraflollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\_entity\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\_entity\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Player\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player_State\\Player_Move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Player\\Player_State\\Player_Move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\PlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\StateMachine\\PlayerState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\EntityState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\StateMachine\\EntityState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +50,129 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraFlollow.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\CameraScript\\CameraFlollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\CameraScript\\CameraFlollow.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\CameraScript\\CameraFlollow.cs",
-              "RelativeToolTip": "Assets\\Script\\CameraScript\\CameraFlollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\_Entity\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\_Entity\\Player\\Player.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\_Entity\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Script\\_Entity\\Player\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T07:03:33.745Z",
+              "WhenOpened": "2026-04-26T13:53:10.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Player.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player.cs",
+              "RelativeToolTip": "Assets\\Script\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:14:33.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\_Entity\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\_Entity\\Enemy\\Enemy.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\_Entity\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Script\\_Entity\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T13:13:50.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UniversalRenderPipeline.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.12\\Runtime\\UniversalRenderPipeline.cs",
+              "ViewState": "AgIAAIACAAAAAAAAAAA9wJ0CAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T05:37:13.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player_Move.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player_State\\Player_Move.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Player\\Player_State\\Player_Move.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player_State\\Player_Move.cs",
+              "RelativeToolTip": "Assets\\Script\\Player\\Player_State\\Player_Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T13:09:50.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\PlayerState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StateMachine\\PlayerState.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\PlayerState.cs",
+              "RelativeToolTip": "Assets\\Script\\StateMachine\\PlayerState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:58:28.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EntityState.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\EntityState.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StateMachine\\EntityState.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\EntityState.cs",
+              "RelativeToolTip": "Assets\\Script\\StateMachine\\EntityState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:58:05.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StateMachine.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\StateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\StateMachine\\StateMachine.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\StateMachine\\StateMachine.cs",
+              "RelativeToolTip": "Assets\\Script\\StateMachine\\StateMachine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:57:27.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Entity.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Entity.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Entity.cs",
+              "RelativeToolTip": "Assets\\Script\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T12:55:07.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Player.cs",
               "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Script\\Player\\Player.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAA7wGoAAACQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T06:26:08.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T12:45:08.302Z"
             }
           ]
         }
