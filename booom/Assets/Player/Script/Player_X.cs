@@ -1,63 +1,60 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
-public class Player_X : MonoBehaviour
+public class Player_X : MonoBehaviour, IDamageable
 {
     public enum State { Idle, Move, Jump, Attack }
     public State currentState;
-    public CameraController cameraController;   
+    public CameraController cameraController;
 
-
-    [Header("“∆∂Ø")]
+    [Header("ÁßªÂä®")]
     public float speed = 5f;
     public float jumpForce = 8f;
 
-    [Header("µÿ√ÊºÏ≤‚")]
-    public float groundCheckDistance = 0.1f;
+    [Header("Âú∞Èù¢Ê£ÄÊµã")]
+    public float groundCheckDistance = 0.2f;
     public LayerMask whatIsGround;
     public Transform groundCheckPoint;
 
-    [Header("Œ¨∂»")]
+    [Header("Áª¥Â∫¶")]
     public bool OnX = true;
+    public GameObject playerZ;
+
+    [Header("Â∞ÑÂáª")]
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float lifeTime = 2f;
+    public LayerMask whatIsEnemy;
+
+    [Header("Ë°ÄÈáè")]
+    public HealthContainer healthContainer;
 
     private Rigidbody rb;
     private Animator anim;
     private bool onGround;
     private int facingDir = 1;
     public bool triggerCalled;
+    private bool isDead;
 
-    [Header("Ã¯‘æ")]
-
-    [Header("…‰ª˜")]
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    public float lifeTime = 2f;
-    public LayerMask whatIsEnemy;
-
-    [Header("–˝◊™")]
-    public float changeSpeed = 100f;
-
-    // Animator ≤Œ ˝
     private int yVelocityHash = Animator.StringToHash("yVelocity");
+    private int xVelocityHash = Animator.StringToHash("xVelocity");
 
     void Start()
     {
-        rb = GetComponentInParent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
 
-        if (groundCheckPoint == null)
-            groundCheckPoint = transform;
-        /*        Debug.Log($"ºÏ≤‚µ„Œª÷√: {groundCheckPoint.position}");
-                Debug.Log($"ºÏ≤‚æ‡¿Î: {groundCheckDistance}");
-                Debug.Log($"ºÏ≤‚≤„º∂: {whatIsGround.value}");*/
+        if (groundCheckPoint == null) groundCheckPoint = transform;
+        if (firePoint == null) firePoint = transform;
+
         currentState = State.Idle;
     }
 
     void Update()
     {
-        if (!OnX) return;
+        if (!OnX || isDead) return;
+
         CheckGround();
         UpdateAnimatorParameters();
-
 
         float moveX = Input.GetAxisRaw("Horizontal");
 
@@ -80,33 +77,37 @@ public class Player_X : MonoBehaviour
                 break;
         }
 
-        // ∑≠◊™
-        transform.rotation = Quaternion.Euler(0, facingDir == 1 ? 0 : 180, 0);
+        transform.localScale = new Vector3(facingDir == 1 ? 1 : -1, 1, 1);
     }
 
     void UpdateAnimatorParameters()
     {
-        anim.SetFloat("yVelocityHash", rb.velocity.y);
+        anim.SetFloat(yVelocityHash, rb.velocity.y);
+        anim.SetFloat(xVelocityHash, Mathf.Abs(rb.velocity.x));
+    }
+
+    void CheckGround()
+    {
+        onGround = Physics.Raycast(
+            groundCheckPoint.position,
+            Vector3.down,
+            groundCheckDistance,
+            whatIsGround
+        );
+
+        Debug.DrawRay(groundCheckPoint.position, Vector3.down * groundCheckDistance, onGround ? Color.green : Color.red);
     }
 
     void HandleIdleState(float moveX)
     {
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+
         if (Input.GetKeyDown(KeyCode.J))
-        {
             ChangeState(State.Attack);
-        }
         else if (Input.GetKeyDown(KeyCode.Space) && onGround)
-        {
             ChangeState(State.Jump);
-        }
         else if (moveX != 0)
-        {
             ChangeState(State.Move);
-        }
-        else if (onGround && rb.velocity.y == 0)
-        {
-            rb.velocity = new Vector3(0, rb.velocity.y, 0);
-        }
     }
 
     void HandleMoveState(float moveX)
@@ -114,12 +115,12 @@ public class Player_X : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             ChangeState(State.Attack);
-            return;  // ¡¢º¥∑µªÿ£¨≤ª÷¥––∫Û√Êµƒ“∆∂Ø¥˙¬Î
+            return;
         }
         else if (Input.GetKeyDown(KeyCode.Space) && onGround)
         {
             ChangeState(State.Jump);
-            return;  // ¡¢º¥∑µªÿ
+            return;
         }
         else if (moveX == 0)
         {
@@ -127,7 +128,6 @@ public class Player_X : MonoBehaviour
             return;
         }
 
-        // ÷ª”–≤ª«–ªª◊¥Ã¨ ±≤≈…Ë÷√“∆∂ØÀŸ∂»
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
     }
 
@@ -139,87 +139,61 @@ public class Player_X : MonoBehaviour
             return;
         }
 
-        // ø’÷–ø…“‘ÀÆ∆Ω“∆∂Ø
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
 
-        // ¬‰µÿºÏ≤‚£®–Ë“™…‘Œ¢œ¬Ωµ≤≈ƒ‹¬‰µÿ£©
-        if (onGround && rb.velocity.y == 0)
-        {
+        if (onGround && rb.velocity.y <= 0)
             ChangeState(State.Idle);
-        }
     }
 
     void HandleAttackState()
     {
-        // π•ª˜ ±≤ªƒ‹“∆∂Ø
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
 
         if (triggerCalled)
-        {
             ChangeState(State.Idle);
-        }
-
-    }
-
-    void CheckGround()
-    {
-        onGround = Physics.Raycast(
-            groundCheckPoint.position,
-            Vector3.down,
-            groundCheckDistance,
-            whatIsGround
-        );
-        /*        Debug.Log($"µÿ√ÊºÏ≤‚: onGround = {onGround}");*/
     }
 
     void ChangeState(State newState)
     {
         if (currentState == newState) return;
-        /*
-                Debug.Log($"◊¥Ã¨«–ªª: {currentState} -> {newState}");*/
 
-        // ÕÀ≥ˆµ±«∞◊¥Ã¨
         currentState = newState;
 
-        // ÷ÿ÷√∂Øª≠≤Œ ˝
-        anim.SetBool("Idle", false);
-        anim.SetBool("Move", false);
-        anim.SetBool("Jump", false);
-        anim.SetBool("Attack", false);
+        if (anim != null)
+        {
+            anim.SetBool("Idle", false);
+            anim.SetBool("Move", false);
+            anim.SetBool("Jump", false);
+            anim.SetBool("Attack", false);
+        }
 
         triggerCalled = false;
 
-        // Ω¯»Î–¬◊¥Ã¨
         switch (newState)
         {
             case State.Idle:
-                anim.SetBool("Idle", true);
+                if (anim != null) anim.SetBool("Idle", true);
                 break;
             case State.Move:
-                anim.SetBool("Move", true);
+                if (anim != null) anim.SetBool("Move", true);
                 break;
             case State.Jump:
-                anim.SetBool("Jump", true);
-                // «ø÷∆…Ë÷√œÚ…œµƒÀŸ∂»
+                if (anim != null) anim.SetBool("Jump", true);
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
-                /*                Debug.Log($"Ã¯‘æ£°ÀŸ∂»: {rb.velocity}");*/
                 break;
             case State.Attack:
-                anim.SetBool("Attack", true);
-                ShootX();
+                if (anim != null) anim.SetBool("Attack", true);
+                Shoot();
                 break;
         }
     }
 
-    void ShootX()
+    void Shoot()
     {
         Vector3 origin = firePoint != null ? firePoint.position : transform.position;
-
-        // «∞∑Ω∑ΩœÚ£®X÷·√Ê£∫◊Û”“£©
         Vector3 forwardDir = facingDir == 1 ? Vector3.right : Vector3.left;
 
         Collider[] hits = Physics.OverlapSphere(origin, 15f, whatIsEnemy);
-
         Transform closest = null;
         float closestDist = 15f;
 
@@ -228,7 +202,6 @@ public class Player_X : MonoBehaviour
             Vector3 toEnemy = hits[i].transform.position - origin;
             float dot = Vector3.Dot(toEnemy.normalized, forwardDir);
 
-            // µ–»À‘⁄«∞∑Ω∞Î‘≤ƒ⁄£®dot > -0.1 ∏≤∏«≤‡√Ê£©
             if (dot > -0.1f)
             {
                 float dist = toEnemy.magnitude;
@@ -240,13 +213,10 @@ public class Player_X : MonoBehaviour
             }
         }
 
-        Vector3 dir;
-        if (closest != null)
-            dir = (closest.position - origin).normalized;
-        else
-            dir = forwardDir;
+        Vector3 dir = closest != null ? (closest.position - origin).normalized : forwardDir;
 
         GameObject bullet = Instantiate(bulletPrefab, origin, Quaternion.LookRotation(dir));
+
         HomingBullet homing = bullet.GetComponent<HomingBullet>();
         if (homing != null)
         {
@@ -254,7 +224,48 @@ public class Player_X : MonoBehaviour
             homing.SetTarget(closest);
         }
 
-        Destroy(bullet, 2f);
+        Destroy(bullet, lifeTime);
+    }
+
+    public void TakeDamage(float damage, Transform damageDealer)
+    {
+        if (healthContainer == null) return;
+
+        healthContainer.TakeDamage(damage);
+
+        if (anim != null) anim.SetTrigger("Hurt");
+
+        Vector3 knockbackDir = (transform.position - damageDealer.position).normalized;
+        knockbackDir.y = 0.5f;
+        rb.velocity = knockbackDir * 8f;
+
+        if (healthContainer.IsDead())
+            Die();
+    }
+
+    void Die()
+    {
+        isDead = true;
+
+        if (anim != null)
+        {
+            anim.SetBool("Idle", false);
+            anim.SetBool("Move", false);
+            anim.SetBool("Jump", false);
+            anim.SetBool("Attack", false);
+            anim.SetBool("Dead", true);
+        }
+
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
+
+        if (GetComponent<Collider>() != null)
+            GetComponent<Collider>().enabled = false;
+
+        Destroy(gameObject, 3f);
     }
 
     void OnDrawGizmos()

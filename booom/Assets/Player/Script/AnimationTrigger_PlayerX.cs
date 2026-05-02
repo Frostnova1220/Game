@@ -1,14 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimationTrigger_PlayerX : MonoBehaviour
 {
-    public Player_X Player_X;
+    private Player_X playerX;
+
+    void Awake()
+    {
+        playerX = GetComponentInParent<Player_X>();
+    }
 
     public void Trigger()
     {
-        Player_X.triggerCalled = true; 
+        if (playerX != null)
+            playerX.triggerCalled = true;
     }
-
 }
