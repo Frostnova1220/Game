@@ -8,6 +8,12 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private float interactRange;
     [SerializeField] private LayerMask interactableLayerMask;
     private IInteractable currentTarget; 
+    private Player_X Player_X;
+
+    private void Start()
+    {
+        Player_X = GetComponent<Player_X>();
+    }
 
     void Update()
     {
@@ -22,7 +28,7 @@ public class PlayerInteractor : MonoBehaviour
 
     void DetectInteractable()
     {
-        Ray ray = new Ray(transform.position, transform.right*interactRange);
+        Ray ray = new Ray(transform.position, transform.right*interactRange*Player_X.facingDir);
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, interactRange, interactableLayerMask))
         {
@@ -40,6 +46,6 @@ public class PlayerInteractor : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(transform.position, transform.right * interactRange);
+        Gizmos.DrawRay(transform.position, transform.right * interactRange*Player_X.facingDir);
     }
 }

@@ -5,6 +5,7 @@ public class Player_X : MonoBehaviour, IDamageable
     public enum State { Idle, Move, Jump, Attack }
     public State currentState;
     public CameraController cameraController;
+    public AudioController audioController;
 
     [Header("移动")]
     public float speed = 5f;
@@ -29,9 +30,9 @@ public class Player_X : MonoBehaviour, IDamageable
     public HealthContainer healthContainer;
 
     private Rigidbody rb;
-    private Animator anim;
+    public Animator anim;
     private bool onGround;
-    private int facingDir = 1;
+    public int facingDir = 1;
     public bool triggerCalled;
     private bool isDead;
 
@@ -40,6 +41,7 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void Start()
     {
+        audioController = FindObjectOfType<AudioController>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
 
@@ -127,7 +129,6 @@ public class Player_X : MonoBehaviour, IDamageable
             ChangeState(State.Idle);
             return;
         }
-
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
     }
 
@@ -147,8 +148,8 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void HandleAttackState()
     {
-        rb.velocity = new Vector3(0, rb.velocity.y, 0);
 
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
         if (triggerCalled)
             ChangeState(State.Idle);
     }
@@ -183,6 +184,7 @@ public class Player_X : MonoBehaviour, IDamageable
                 break;
             case State.Attack:
                 if (anim != null) anim.SetBool("Attack", true);
+                audioController.PlaySfx(audioController.Shoot);
                 Shoot();
                 break;
         }

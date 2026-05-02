@@ -1,0 +1,29 @@
+﻿# Migration Progress
+
+- Repository path: 
+- Original HEAD commit: 
+
+## Tasks
+
+- [in_progress] Collect repository state and create a migration branch
+- [ ] Scan codebase for file-based logging usages
+- [ ] Prepare list of files to update and required replacements
+- [ ] Replace file-based logging calls with console logging (Unity: Debug.Log / Non-Unity: Console.WriteLine)
+- [ ] Update logging framework configurations (remove file sinks, add console sinks)
+- [ ] Update project dependencies (add console sink packages if necessary)
+- [ ] Build and fix compilation errors
+- [ ] Run CVE vulnerability check on added packages
+- [ ] Completeness validation
+- [ ] Consistency validation
+- [ ] Commit final changes and close migration
+
+
+## Important Guideline
+
+1. When you use terminal command tool, never input a long command with multiple lines, always use a single line command.
+2. When performing semantic or intent-based searches, DO NOT search content from `.appmod/` folder.
+3. Never create a new project in the solution, always use the existing project to add new files or update the existing files.
+4. Minimize code changes.
+5. Use provided nuget package tools to manage dependencies.
+6. Task tracking: update the checklist statuses as tasks progress.
+
