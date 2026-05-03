@@ -81,6 +81,9 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 256
+  hitRadius: 0.8
+  sfx: {fileID: 9169947517213717033, guid: 7e75ef8e0ed90c7429775994ccf39459, type: 3}
+  enemy: {fileID: 0}
 --- !u!114 &-7499927690257089210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb9950572df7f74e88e0c7be7d2a546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player_X: {fileID: 0}
 --- !u!1 &6926780822552522126
 GameObject:
   m_ObjectHideFlags: 0

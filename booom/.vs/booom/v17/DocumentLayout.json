@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\music\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\music\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\dialog\\dialoguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialog\\dialoguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\event\\interactablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\event\\interactablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,16 +11,52 @@
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\event\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\homingbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\homingbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\dialog\\dialoguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\dialog\\dialoguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\resources\\\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\sfx\\sfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\sfx\\sfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\healthcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\healthcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\idmageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\idmageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\music\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\music\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\event\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\event\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\event\\jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\event\\jump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\resources\\\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +66,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Sfx.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Sfx\\Sfx.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Sfx\\Sfx.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Sfx\\Sfx.cs",
+              "RelativeToolTip": "Assets\\Script\\Sfx\\Sfx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:55:41.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player_X.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Player_X.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\Player_X.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T12:32:21.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomingBullet.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\HomingBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\HomingBullet.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\HomingBullet.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\HomingBullet.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:39:04.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Health.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Health.cs",
+              "RelativeToolTip": "Assets\\Player\\Health.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAA1wAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:32:54.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HealthContainer.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\HealthContainer.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\HealthContainer.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\HealthContainer.cs",
+              "RelativeToolTip": "Assets\\Player\\HealthContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:32:26.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IDmageable.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\IDmageable.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\IDmageable.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\IDmageable.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\IDmageable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T08:51:08.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AudioController.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Music\\AudioController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Music\\AudioController.cs",
@@ -58,25 +151,11 @@
               "RelativeToolTip": "Assets\\Script\\Music\\AudioController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAwwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T13:10:53.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T13:10:53.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player_X.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Player_X.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
-              "RelativeToolTip": "Assets\\Player\\Script\\Player_X.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAAG4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:32:21.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Dialog.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Dialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Event\\Dialog.cs",
@@ -84,12 +163,11 @@
               "RelativeToolTip": "Assets\\Script\\Event\\Dialog.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:29:31.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:29:31.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "IInteractable.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\IInteractable.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Event\\IInteractable.cs",
@@ -102,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "InteractableBase.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\InteractableBase.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Event\\InteractableBase.cs",
@@ -115,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Jump.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Jump.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Event\\Jump.cs",
@@ -123,44 +201,42 @@
               "RelativeToolTip": "Assets\\Script\\Event\\Jump.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:29:25.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:29:25.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DialogueController.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Dialog\\DialogueController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Dialog\\DialogueController.cs",
               "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Dialog\\DialogueController.cs",
               "RelativeToolTip": "Assets\\Script\\Dialog\\DialogueController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA+wBgAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAxwBgAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T12:10:12.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "PlayerInteractor.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\PlayerInteractor.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Script\\PlayerInteractor.cs",
               "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\PlayerInteractor.cs",
               "RelativeToolTip": "Assets\\Player\\Script\\PlayerInteractor.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAzwBwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAA/wCYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T12:32:17.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:32:17.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "\u5BF9\u8BDD.txt",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Resources\\\u5BF9\u8BDD.txt",
               "RelativeDocumentMoniker": "Assets\\Resources\\\u5BF9\u8BDD.txt",
               "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Resources\\\u5BF9\u8BDD.txt",
               "RelativeToolTip": "Assets\\Resources\\\u5BF9\u8BDD.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-05-02T12:18:16.167Z"
             }

@@ -12,11 +12,22 @@ public class HomingBullet : MonoBehaviour
     private Transform target;
     private bool hasTarget;
 
+    [Header("ÌØÐ§")]
+    public GameObject sfx;
+    public GameObject enemy;
+
+    public void PlayBulletSfx(Vector3 position)
+    {
+        GameObject sfx1 = Instantiate(sfx, position, Quaternion.identity);
+        Destroy(sfx1, 1f);
+    }
+
     public void SetTarget(Transform enemy)
     {
         target = enemy;
         hasTarget = enemy != null;
     }
+
 
     void Update()
     {

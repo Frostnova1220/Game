@@ -29,6 +29,8 @@ public class Player_X : MonoBehaviour, IDamageable
     [Header("血量")]
     public HealthContainer healthContainer;
 
+
+
     private Rigidbody rb;
     public Animator anim;
     private bool onGround;
@@ -276,4 +278,6 @@ public class Player_X : MonoBehaviour, IDamageable
         Vector3 origin = groundCheckPoint != null ? groundCheckPoint.position : transform.position;
         Gizmos.DrawLine(origin, origin + Vector3.down * groundCheckDistance);
     }
+
+
 }
