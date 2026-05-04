@@ -5,7 +5,6 @@ public class Player_X : MonoBehaviour, IDamageable
     public enum State { Idle, Move, Jump, Attack }
     public State currentState;
     public CameraController cameraController;
-    public AudioController audioController;
 
     [Header("移动")]
     public float speed = 5f;
@@ -29,12 +28,10 @@ public class Player_X : MonoBehaviour, IDamageable
     [Header("血量")]
     public HealthContainer healthContainer;
 
-
-
     private Rigidbody rb;
-    public Animator anim;
+    private Animator anim;
     private bool onGround;
-    public int facingDir = 1;
+    private int facingDir = 1;
     public bool triggerCalled;
     private bool isDead;
 
@@ -43,7 +40,6 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void Start()
     {
-        audioController = FindObjectOfType<AudioController>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
 
@@ -52,9 +48,14 @@ public class Player_X : MonoBehaviour, IDamageable
 
         currentState = State.Idle;
     }
+  
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        }
         if (!OnX || isDead) return;
 
         CheckGround();
@@ -131,6 +132,7 @@ public class Player_X : MonoBehaviour, IDamageable
             ChangeState(State.Idle);
             return;
         }
+
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
     }
 
@@ -150,8 +152,8 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void HandleAttackState()
     {
-
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
+
         if (triggerCalled)
             ChangeState(State.Idle);
     }
@@ -186,7 +188,6 @@ public class Player_X : MonoBehaviour, IDamageable
                 break;
             case State.Attack:
                 if (anim != null) anim.SetBool("Attack", true);
-                audioController.PlaySfx(audioController.Shoot);
                 Shoot();
                 break;
         }
@@ -197,6 +198,19 @@ public class Player_X : MonoBehaviour, IDamageable
         Vector3 origin = firePoint != null ? firePoint.position : transform.position;
         Vector3 forwardDir = facingDir == 1 ? Vector3.right : Vector3.left;
 
+        // 道具使用
+        ItemManager itemMgr = FindObjectOfType<ItemManager>();
+        if (itemMgr != null)
+        {
+            if (itemMgr.TryUseEquippedItem(origin, forwardDir, bulletPrefab, firePoint, whatIsEnemy, out GameObject specialBullet))
+            {
+                if (specialBullet != null)
+                    Destroy(specialBullet, lifeTime);
+                return;
+            }
+        }
+
+        // 普通子弹
         Collider[] hits = Physics.OverlapSphere(origin, 15f, whatIsEnemy);
         Transform closest = null;
         float closestDist = 15f;
@@ -205,7 +219,6 @@ public class Player_X : MonoBehaviour, IDamageable
         {
             Vector3 toEnemy = hits[i].transform.position - origin;
             float dot = Vector3.Dot(toEnemy.normalized, forwardDir);
-
             if (dot > -0.1f)
             {
                 float dist = toEnemy.magnitude;
@@ -218,18 +231,17 @@ public class Player_X : MonoBehaviour, IDamageable
         }
 
         Vector3 dir = closest != null ? (closest.position - origin).normalized : forwardDir;
-
         GameObject bullet = Instantiate(bulletPrefab, origin, Quaternion.LookRotation(dir));
-
         HomingBullet homing = bullet.GetComponent<HomingBullet>();
         if (homing != null)
         {
             homing.whatIsEnemy = whatIsEnemy;
             homing.SetTarget(closest);
         }
-
         Destroy(bullet, lifeTime);
     }
+
+ 
 
     public void TakeDamage(float damage, Transform damageDealer)
     {
@@ -278,6 +290,4 @@ public class Player_X : MonoBehaviour, IDamageable
         Vector3 origin = groundCheckPoint != null ? groundCheckPoint.position : transform.position;
         Gizmos.DrawLine(origin, origin + Vector3.down * groundCheckDistance);
     }
-
-
 }
