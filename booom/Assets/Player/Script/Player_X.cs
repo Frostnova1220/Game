@@ -52,10 +52,8 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
-        }
+     
+
         if (!OnX || isDead) return;
 
         CheckGround();

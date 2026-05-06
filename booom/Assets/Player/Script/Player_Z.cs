@@ -51,10 +51,7 @@ public class Player_Z : MonoBehaviour, IDamageable
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
-        }
+      
         if (OnX || isDead) return;
 
         CheckGround();
@@ -64,7 +61,6 @@ public class Player_Z : MonoBehaviour, IDamageable
 
         if (moveZ != 0)
             facingDir = moveZ > 0 ? -1 : 1;
-
         switch (currentState)
         {
             case State.Idle:
@@ -132,7 +128,7 @@ public class Player_Z : MonoBehaviour, IDamageable
             return;
         }
 
-        rb.velocity = new Vector3(0, rb.velocity.y, moveZ * speed);
+        rb.velocity = new Vector3(0, rb.velocity.y, -moveZ * speed);
     }
 
     void HandleJumpState(float moveZ)
@@ -143,7 +139,7 @@ public class Player_Z : MonoBehaviour, IDamageable
             return;
         }
 
-        rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
+        rb.velocity = new Vector3(0, rb.velocity.y, -moveZ * speed);
 
         if (onGround && rb.velocity.y <= 0)
             ChangeState(State.Idle);
