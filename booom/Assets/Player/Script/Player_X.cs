@@ -10,6 +10,8 @@ public class Player_X : MonoBehaviour, IDamageable
     [Header("移动")]
     public float speed = 5f;
     public float jumpForce = 8f;
+    private float footstepTimer = 0f;
+    public float footstepInterval = 0.4f;
 
     [Header("地面检测")]
     public float groundCheckDistance = 0.2f;
@@ -82,6 +84,8 @@ public class Player_X : MonoBehaviour, IDamageable
         }
 
         transform.localScale = new Vector3(facingDir == 1 ? 1 : -1, 1, 1);
+
+        HandleFootsteps();
     }
 
     void UpdateAnimatorParameters()
@@ -104,7 +108,7 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void HandleIdleState(float moveX)
     {
-        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+
 
         if (Input.GetKeyDown(KeyCode.J))
             ChangeState(State.Attack);
@@ -116,6 +120,7 @@ public class Player_X : MonoBehaviour, IDamageable
 
     void HandleMoveState(float moveX)
     {
+
         if (Input.GetKeyDown(KeyCode.J))
         {
             ChangeState(State.Attack);
@@ -151,7 +156,7 @@ public class Player_X : MonoBehaviour, IDamageable
     void HandleAttackState()
     {
 
-        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+
         if (triggerCalled)
             ChangeState(State.Idle);
     }
@@ -175,16 +180,20 @@ public class Player_X : MonoBehaviour, IDamageable
         switch (newState)
         {
             case State.Idle:
+                rb.velocity = new Vector3(0, rb.velocity.y, 0);
                 if (anim != null) anim.SetBool("Idle", true);
                 break;
             case State.Move:
+                footstepTimer = 0f;
                 if (anim != null) anim.SetBool("Move", true);
                 break;
             case State.Jump:
+                audioController.PlaySfx(audioController.Jump);
                 if (anim != null) anim.SetBool("Jump", true);
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
                 break;
             case State.Attack:
+                rb.velocity = new Vector3(0, rb.velocity.y, 0);
                 if (anim != null) anim.SetBool("Attack", true);
                 audioController.PlaySfx(audioController.Shoot);
                 Shoot();
@@ -272,7 +281,24 @@ public class Player_X : MonoBehaviour, IDamageable
         Destroy(gameObject, 3f);
     }
 
-    void OnDrawGizmos()
+    void HandleFootsteps()
+    {
+        if (currentState != State.Move || !onGround)
+        {
+            footstepTimer = 0f;
+            return;
+        }
+
+        footstepTimer -= Time.deltaTime;
+        if (footstepTimer <= 0f)
+        {
+            footstepTimer = footstepInterval;
+            audioController.PlaySfx(audioController.Walk);
+        }
+    }
+
+
+        void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Vector3 origin = groundCheckPoint != null ? groundCheckPoint.position : transform.position;

@@ -16,8 +16,8 @@ public class AudioController : MonoBehaviour
 
     private void Start()
     {
-/*        BgmAudio.clip = Bgm;
-        BgmAudio.Play();*/
+        BgmAudio.clip = Bgm;
+        BgmAudio.Play();
     }
 
     public void PlaySfx(AudioClip clip)

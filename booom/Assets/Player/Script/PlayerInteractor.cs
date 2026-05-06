@@ -8,12 +8,8 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private float interactRange;
     [SerializeField] private LayerMask interactableLayerMask;
     private IInteractable currentTarget; 
-    private Player_X Player_X;
+    public Player_X Player_X;
 
-    private void Start()
-    {
-        Player_X = GetComponent<Player_X>();
-    }
 
     void Update()
     {
