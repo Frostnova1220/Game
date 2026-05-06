@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:booom/Assets/Boss.meta
 guid: 0dcc2c2a254b2d048b08645804a04818
+========
+guid: d148c2dbc4f8eb64ba25dc8639ac7b59
+>>>>>>>> b33c4a6ccdcace24a8ce90d972e4365f9faba9c3:booom/Assets/Player/Script/prefabs.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

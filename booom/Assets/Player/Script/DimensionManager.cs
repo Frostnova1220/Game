@@ -4,7 +4,6 @@ public class DimensionManager : MonoBehaviour
 {
     public GameObject playerX;
     public GameObject playerZ;
-    public CameraController cameraController;
 
     private bool isXDimension = true;
 
@@ -26,9 +25,7 @@ public class DimensionManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
-        {
             ToggleDimension();
-        }
     }
 
     void ToggleDimension()
@@ -53,8 +50,6 @@ public class DimensionManager : MonoBehaviour
 
         Player_Z pz = playerZ.GetComponent<Player_Z>();
         if (pz != null) pz.OnX = false;
-
-        Debug.Log("切换到 X 维度");
     }
 
     void SetZDimension()
@@ -71,7 +66,5 @@ public class DimensionManager : MonoBehaviour
 
         Player_Z pz = playerZ.GetComponent<Player_Z>();
         if (pz != null) pz.OnX = false;
-
-        Debug.Log("切换到 Z 维度");
     }
 }

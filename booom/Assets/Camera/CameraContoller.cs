@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
     public Transform target;
 
     [Header("基准偏移")]
-    public Vector3 offset;
+    public Vector3 offset ;
 
     [Header("旋转设置")]
     public float rotationSpeed = 120f;
@@ -37,7 +37,9 @@ public class CameraController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, desiredPosition, positionSmoothSpeed * Time.deltaTime);
 
-        Quaternion lookRotation = Quaternion.LookRotation(target.position - transform.position);
+        // 只绕 Y 轴朝向目标，不低头不抬头
+        Vector3 flatTargetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
+        Quaternion lookRotation = Quaternion.LookRotation(flatTargetPos - transform.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSmoothSpeed * Time.deltaTime);
     }
 }

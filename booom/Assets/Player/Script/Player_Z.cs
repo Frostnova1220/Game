@@ -51,6 +51,7 @@ public class Player_Z : MonoBehaviour, IDamageable
 
     void Update()
     {
+      
         if (OnX || isDead) return;
 
         CheckGround();
@@ -60,7 +61,6 @@ public class Player_Z : MonoBehaviour, IDamageable
 
         if (moveZ != 0)
             facingDir = moveZ > 0 ? -1 : 1;
-
         switch (currentState)
         {
             case State.Idle:
@@ -128,7 +128,7 @@ public class Player_Z : MonoBehaviour, IDamageable
             return;
         }
 
-        rb.velocity = new Vector3(0, rb.velocity.y, moveZ * speed);
+        rb.velocity = new Vector3(0, rb.velocity.y, -moveZ * speed);
     }
 
     void HandleJumpState(float moveZ)
@@ -139,7 +139,7 @@ public class Player_Z : MonoBehaviour, IDamageable
             return;
         }
 
-        rb.velocity = new Vector3(0, rb.velocity.y, rb.velocity.z);
+        rb.velocity = new Vector3(0, rb.velocity.y, -moveZ * speed);
 
         if (onGround && rb.velocity.y <= 0)
             ChangeState(State.Idle);
@@ -193,6 +193,19 @@ public class Player_Z : MonoBehaviour, IDamageable
         Vector3 origin = firePoint != null ? firePoint.position : transform.position;
         Vector3 forwardDir = facingDir == 1 ? Vector3.forward : Vector3.back;
 
+        // 道具使用
+        ItemManager itemMgr = FindObjectOfType<ItemManager>();
+        if (itemMgr != null)
+        {
+            if (itemMgr.TryUseEquippedItem(origin, forwardDir, bulletPrefab, firePoint, whatIsEnemy, out GameObject specialBullet))
+            {
+                if (specialBullet != null)
+                    Destroy(specialBullet, lifeTime);
+                return;
+            }
+        }
+
+        // 普通子弹
         Collider[] hits = Physics.OverlapSphere(origin, 15f, whatIsEnemy);
         Transform closest = null;
         float closestDist = 15f;
@@ -201,7 +214,6 @@ public class Player_Z : MonoBehaviour, IDamageable
         {
             Vector3 toEnemy = hits[i].transform.position - origin;
             float dot = Vector3.Dot(toEnemy.normalized, forwardDir);
-
             if (dot > -0.1f)
             {
                 float dist = toEnemy.magnitude;
@@ -214,16 +226,13 @@ public class Player_Z : MonoBehaviour, IDamageable
         }
 
         Vector3 dir = closest != null ? (closest.position - origin).normalized : forwardDir;
-
         GameObject bullet = Instantiate(bulletPrefab, origin, Quaternion.LookRotation(dir));
-
         HomingBullet homing = bullet.GetComponent<HomingBullet>();
         if (homing != null)
         {
             homing.whatIsEnemy = whatIsEnemy;
             homing.SetTarget(closest);
         }
-
         Destroy(bullet, lifeTime);
     }
 
