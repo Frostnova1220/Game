@@ -9,6 +9,10 @@ public class HeadHealth : MonoBehaviour, IDamageable
     [Header("闪红效果")]
     public float flashDuration = 0.1f;
 
+    [Header("爆炸特效")]
+    public GameObject explosionVFX;
+    public float vfxDuration = 1.5f;
+
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     private Coroutine flashCoroutine;
@@ -22,11 +26,19 @@ public class HeadHealth : MonoBehaviour, IDamageable
             originalColor = spriteRenderer.color;
     }
 
+    void OnDisable()
+    {
+        GameObject boom=Instantiate(explosionVFX, transform.position, transform.rotation);
+        Destroy(boom, vfxDuration);
+    }
+
     public bool TakeDamage(float damage, Transform damageDealer)
     {
         if (currentHealth <= 0)
         {
-            this.enabled = false;
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+            if (sr != null) sr.color = Color.gray;
+            gameObject.SetActive(false);
             return false;
         }
 

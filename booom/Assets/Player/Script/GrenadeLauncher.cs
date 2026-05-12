@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GrenadeLauncher : MonoBehaviour
@@ -9,7 +7,6 @@ public class GrenadeLauncher : MonoBehaviour
     [Header("¡ÒµØ∑¢…‰…Ë÷√")]
     public GameObject grenadePrefab;
     public float launchSpeed = 15f;
-    public float cooldown = 0f;
     public LayerMask enemyLayer;
 
     [Header("¡ÒµØ≤Œ ˝")]
@@ -24,8 +21,7 @@ public class GrenadeLauncher : MonoBehaviour
     [Header("µØ“©…Ë÷√")]
     public int maxAmmo = 3;
 
-    private int currentAmmo = 0;
-    private float lastFireTime;
+    public int currentAmmo = 0;
 
     public System.Action<int> onAmmoChanged;
 
@@ -38,10 +34,8 @@ public class GrenadeLauncher : MonoBehaviour
     public bool TryFire(Vector3 origin, Vector3 direction)
     {
         if (currentAmmo <= 0) return false;
-        if (Time.time < lastFireTime + cooldown) return false;
 
         currentAmmo--;
-        lastFireTime = Time.time;
 
         FireGrenade(origin, direction);
         onAmmoChanged?.Invoke(currentAmmo);
@@ -52,7 +46,8 @@ public class GrenadeLauncher : MonoBehaviour
     {
         if (grenadePrefab == null) return;
 
-        GameObject grenade = Instantiate(grenadePrefab, origin, Quaternion.LookRotation(direction));
+        GameObject grenade = Instantiate(grenadePrefab, origin, Quaternion.identity);
+        grenade.transform.forward = direction;
 
         GrenadeProjectile projectile = grenade.GetComponent<GrenadeProjectile>();
         if (projectile == null)
@@ -65,6 +60,7 @@ public class GrenadeLauncher : MonoBehaviour
         if (rb == null)
             rb = grenade.AddComponent<Rigidbody>();
 
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
         rb.velocity = direction * launchSpeed;
     }
 

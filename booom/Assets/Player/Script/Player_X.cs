@@ -5,6 +5,7 @@ public class Player_X : MonoBehaviour, IDamageable
     public enum State { Idle, Move, Jump, Attack }
     public State currentState;
     public AudioController audioController;
+    public GrenadeLauncher grenadeLauncher;
 
     [Header("移动")]
     public float speed = 5f;
@@ -48,6 +49,7 @@ public class Player_X : MonoBehaviour, IDamageable
         audioController = FindObjectOfType<AudioController>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+        grenadeLauncher = GetComponentInParent<GrenadeLauncher>();
         anim.SetBool("Gun1", Gun1);
         anim.SetBool("Gun2", Gun2);
 
@@ -78,10 +80,18 @@ public class Player_X : MonoBehaviour, IDamageable
 
         CheckGround();
 
-        if (Input.GetKeyDown(KeyCode.Q)&& GrenadeLauncher.instance != null)
+        if (Input.GetKeyDown(KeyCode.Q)&& grenadeLauncher.currentAmmo!= 0)
         {
             Gun1 = !Gun1;
             Gun2 = !Gun2;
+            anim.SetBool("Gun1", Gun1);
+            anim.SetBool("Gun2", Gun2);
+        }
+
+        if(grenadeLauncher.currentAmmo==0)
+        {
+            Gun1= true;
+            Gun2 = false;
             anim.SetBool("Gun1", Gun1);
             anim.SetBool("Gun2", Gun2);
         }

@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\boss\\script\\armhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\boss\\script\\armhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\grenadelauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\grenadelauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\script\\ui\\uicontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\uicontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\grenadeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\grenadeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|d:\\unity\uFF08\uFF1F\\git demo\\boom\\booom\\assets\\player\\script\\grenadepickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\grenadepickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\dimensionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\dimensionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\boss\\script\\headhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\boss\\script\\headhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\boss\\script\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\boss\\script\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\boss\\script\\armhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\boss\\script\\armhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\firebullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\firebullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\script\\event\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\boss\\script\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\boss\\script\\bosscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\PickupGenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +67,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Player\\VFX\\IPickupable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\VFX\\FireBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Player\\VFX\\FireBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\player_z.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\player_z.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DB7C5-546A-4E6D-9F38-6D003D876E79}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\script\\player_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Downloads\\FireBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -93,10 +113,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Player\\Shoot\\DamagedVfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\FireBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Player\\Shoot\\FireBullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Player\\Grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -120,73 +136,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArmHealth.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\ArmHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Boss\\Script\\ArmHealth.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\ArmHealth.cs",
-              "RelativeToolTip": "Assets\\Boss\\Script\\ArmHealth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UIControl.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\UI\\UIControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI\\UIControl.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\UI\\UIControl.cs",
+              "RelativeToolTip": "Assets\\Script\\UI\\UIControl.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:29:57.217Z",
+              "WhenOpened": "2026-05-12T12:27:40.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GrenadeLauncher.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadeLauncher.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\GrenadeLauncher.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadeLauncher.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\GrenadeLauncher.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:23:35.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Damage.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Damage.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Event\\Damage.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Damage.cs",
-              "RelativeToolTip": "Assets\\Script\\Event\\Damage.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAhwCoAAAANAAAAAAAAAA==",
+              "Title": "Player_X.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Player_X.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\Player_X.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAtwMEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:25:10.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnemyHealth.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Enemy\\EnemyHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Enemy\\EnemyHealth.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Enemy\\EnemyHealth.cs",
-              "RelativeToolTip": "Assets\\Enemy\\EnemyHealth.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAA8wBgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:15:19.564Z",
+              "WhenOpened": "2026-05-08T13:48:06.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "ArmHealth.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\ArmHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Boss\\Script\\ArmHealth.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\ArmHealth.cs",
+              "RelativeToolTip": "Assets\\Boss\\Script\\ArmHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:29:57.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BossController.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\BossController.cs",
+              "RelativeDocumentMoniker": "Assets\\Boss\\Script\\BossController.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\BossController.cs",
+              "RelativeToolTip": "Assets\\Boss\\Script\\BossController.cs",
+              "ViewState": "AgIAANgAAAAAAAAAAIAzwB8BAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:10:53.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FireBullet.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\FireBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Script\\FireBullet.cs",
               "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\FireBullet.cs",
               "RelativeToolTip": "Assets\\Player\\Script\\FireBullet.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAzwD0AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAABAwD4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T07:13:19.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Health.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Health.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Health.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Health.cs",
-              "RelativeToolTip": "Assets\\Player\\Script\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:14:18.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "PickupGenade.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\PickupGenade.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\PickupGenade.cs",
@@ -197,18 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FireBullet.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\VFX\\FireBullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\VFX\\FireBullet.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\VFX\\FireBullet.cs",
-              "RelativeToolTip": "Assets\\Player\\VFX\\FireBullet.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T15:08:04.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "Vfx.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\Vfx.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\Vfx.cs",
@@ -220,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "DamagedVfx.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\DamagedVfx.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\DamagedVfx.cs",
@@ -232,19 +250,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FireBullet.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\FireBullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\FireBullet.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\FireBullet.cs",
-              "RelativeToolTip": "Assets\\Player\\Shoot\\FireBullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GrenadeProjectile.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadeProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\GrenadeProjectile.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadeProjectile.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\GrenadeProjectile.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAxwEoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T15:01:40.586Z"
+              "WhenOpened": "2026-05-12T09:38:56.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 6,
+              "Title": "HeadHealth.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\HeadHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Boss\\Script\\HeadHealth.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\HeadHealth.cs",
+              "RelativeToolTip": "Assets\\Boss\\Script\\HeadHealth.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:30:19.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Enemy\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy\\EnemyHealth.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Enemy\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Enemy\\EnemyHealth.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBFwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:15:19.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DimensionManager.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\DimensionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\DimensionManager.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\DimensionManager.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\DimensionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:38:49.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GrenadePickup.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadePickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\GrenadePickup.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\GrenadePickup.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\GrenadePickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:38:55.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Damage.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Damage.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Event\\Damage.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Script\\Event\\Damage.cs",
+              "RelativeToolTip": "Assets\\Script\\Event\\Damage.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAhwCoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:25:10.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Health.cs",
+              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Health.cs",
+              "RelativeToolTip": "Assets\\Player\\Script\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:14:18.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Grenade.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Grenade.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Grenade.cs",
@@ -256,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Player_Z.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_Z.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Script\\Player_Z.cs",
@@ -268,18 +360,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "FireBullet.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\FireBullet.cs",
               "ToolTip": "C:\\Users\\ASUS\\Downloads\\FireBullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:47:52.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T14:47:52.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Health.cs",
@@ -291,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "WormholeExit.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\WormholeExit.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\WormholeExit.cs",
@@ -303,19 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BossController.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\BossController.cs",
-              "RelativeDocumentMoniker": "Assets\\Boss\\Script\\BossController.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Boss\\Script\\BossController.cs",
-              "RelativeToolTip": "Assets\\Boss\\Script\\BossController.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAA7wPkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:10:53.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "GenadeManager.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\GenadeManager.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\GenadeManager.cs",
@@ -327,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "HomingGenadeBullet.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\HomingGenadeBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\HomingGenadeBullet.cs",
@@ -339,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "PickupGenade1.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Shoot\\PickupGenade1.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Shoot\\PickupGenade1.cs",
@@ -350,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "IPickupable.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\VFX\\IPickupable.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\VFX\\IPickupable.cs",
@@ -361,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "PickupItem.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\PickupItem.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PickupItem.cs",
@@ -373,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "PickupItem1.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\PickupItem1.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PickupItem1.cs",
@@ -385,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "IPickupable.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\IPickupable.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\IPickupable.cs",
@@ -397,30 +476,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Player_X.cs",
-              "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
-              "RelativeDocumentMoniker": "Assets\\Player\\Script\\Player_X.cs",
-              "ToolTip": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\Player_X.cs",
-              "RelativeToolTip": "Assets\\Player\\Script\\Player_X.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAIAxwN8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T13:48:06.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Health.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Downloads\\Health.cs",
               "ToolTip": "C:\\Users\\ASUS\\Downloads\\Health.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:46:13.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T14:46:13.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "HomingBullet.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\Script\\HomingBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\Script\\HomingBullet.cs",
@@ -432,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "HomingGenadeBullet.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\HomingGenadeBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\HomingGenadeBullet.cs",
@@ -444,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "HealthContainer.cs",
               "DocumentMoniker": "D:\\Unity\uFF08\uFF1F\\git demo\\Boom\\booom\\Assets\\Player\\HealthContainer.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\HealthContainer.cs",

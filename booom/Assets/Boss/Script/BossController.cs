@@ -99,7 +99,7 @@ public class BossController : MonoBehaviour
 
     void Attack()
     {
-        int attackType = Random.Range(0, 4);
+        int attackType = Random.Range(0, 5);
         switch (attackType)
         {
             case 0:
@@ -131,12 +131,12 @@ public class BossController : MonoBehaviour
     {
         // 移动到攻击点
         yield return StartCoroutine(MoveOverTime(Arm, rest.position, attackPoint.position, armMoveDuration));
-        CheckArmDamage(LeftArm.transform.position);
+        CheckArmDamage(Arm.transform.position);
 
         yield return new WaitForSeconds(attackHoldTime);
 
         yield return StartCoroutine(MoveOverTime(Arm, attackPoint.position, attackEndPoint.position, armMoveDuration));
-        CheckArmDamage(LeftArm.transform.position);
+        CheckArmDamage(Arm.transform.position);
         yield return new WaitForSeconds(attackHoldTime);
 
         // 归位
@@ -257,16 +257,27 @@ public class BossController : MonoBehaviour
         if (sr != null)
             StartCoroutine(FlashRed(sr, flashDuration));
     }
-    
+
     void DetectHealth()
     {
-        if (!isLeftArmBroken && leftArmHealth.currentHealth <= 0)
+        if (!isLeftArmBroken && leftArmHealth != null && leftArmHealth.currentHealth <= 0)
         {
+            leftArmHealth.StopAllCoroutines();
+            leftArmHealth.enabled = false;
+
+            SpriteRenderer sr = LeftArm.GetComponent<SpriteRenderer>();
+            if (sr != null) sr.color = Color.gray;
             isLeftArmBroken = true;
             StartCoroutine(AfterBroken());
         }
-        if (!isRightArmBroken && rightArmHealth.currentHealth <= 0)
+
+        if (!isRightArmBroken && rightArmHealth != null && rightArmHealth.currentHealth <= 0)
         {
+            rightArmHealth.StopAllCoroutines();
+            rightArmHealth.enabled = false;
+
+            SpriteRenderer sr = RightArm.GetComponent<SpriteRenderer>();
+            if (sr != null) sr.color = Color.gray;
             isRightArmBroken = true;
             StartCoroutine(AfterBroken());
         }

@@ -1,15 +1,17 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class UIControl : MonoBehaviour
 {
     public GameObject ExitUI;
-
+    public GrenadeLauncher grenadeLauncher;
 
     public GameObject Gun1;
     public GameObject Gun2;
-    public bool isGun1;
-    public bool isGun2;
+
+    public TextMeshProUGUI Gun;
+    public Player_X player_x;
 
     private void Start()
     {
@@ -18,6 +20,8 @@ public class UIControl : MonoBehaviour
 
     void Update()
     {
+        GunPicture();
+
         // ÔÝÍ£
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -27,6 +31,9 @@ public class UIControl : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
+        Gun.text = $"{grenadeLauncher.currentAmmo}";
+
     }
     public void Back()
     {
@@ -47,12 +54,12 @@ public class UIControl : MonoBehaviour
 
     public void GunPicture()
     {
-        if(isGun1)
+        if(player_x.Gun1)
         {
             Gun1.SetActive(true);
             Gun2.SetActive(false);
         }
-        if(isGun2)
+        if(player_x.Gun2)
         {
             Gun1.SetActive(false);
             Gun2.SetActive(true);

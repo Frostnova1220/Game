@@ -18,7 +18,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         if (currentHealth < 0) currentHealth = 0;
 
         if (currentHealth <= 0)
-            Destroy(gameObject);
+        {
+            gameObject.SetActive(false);
+            currentHealth = maxHealth;
+        }
+
 
         return true;
     }
