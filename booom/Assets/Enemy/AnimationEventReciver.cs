@@ -3,7 +3,7 @@ using UnityEngine;
 public class AnimationEventReceiver : MonoBehaviour
 {
     public Enemy_qu enemy;
-
+    /*
     public void OnAttackHit()
     {
         if (enemy != null)
@@ -18,5 +18,5 @@ public class AnimationEventReceiver : MonoBehaviour
             enemy.OnAttackEnd();
         else
             Debug.LogError("AnimationEventReceiver: enemy Œ¥…Ë÷√");
-    }
+    }*/
 }

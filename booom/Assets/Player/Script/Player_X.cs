@@ -4,13 +4,12 @@ public class Player_X : MonoBehaviour, IDamageable
 {
     public enum State { Idle, Move, Jump, Attack }
     public State currentState;
-    public CameraController cameraController;
     public AudioController audioController;
 
     [Header("移动")]
     public float speed = 5f;
     public float jumpForce = 8f;
-    private float footstepTimer = 0f;
+    private float footstepTimer;
     public float footstepInterval = 0.4f;
 
     [Header("地面检测")]
@@ -20,39 +19,57 @@ public class Player_X : MonoBehaviour, IDamageable
 
     [Header("维度")]
     public bool OnX = true;
-    public GameObject playerZ;
 
     [Header("射击")]
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public float lifeTime = 2f;
+    public float bulletLifetime = 2f;
     public LayerMask whatIsEnemy;
 
+    [Header("武器")]
+    public bool Gun1 = true;
+    public bool Gun2 = false;
+
+    [Header("攻击时间")]
+    public float attackDuration = 0.1f;
+
     [Header("血量")]
-    public HealthContainer healthContainer;
-
-
+    public Health health;
 
     private Rigidbody rb;
     public Animator anim;
     private bool onGround;
     public int facingDir = 1;
-    public bool triggerCalled;
     private bool isDead;
-
-    private int yVelocityHash = Animator.StringToHash("yVelocity");
-    private int xVelocityHash = Animator.StringToHash("xVelocity");
+    private float attackTimer;
 
     void Start()
     {
         audioController = FindObjectOfType<AudioController>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+        anim.SetBool("Gun1", Gun1);
+        anim.SetBool("Gun2", Gun2);
 
         if (groundCheckPoint == null) groundCheckPoint = transform;
         if (firePoint == null) firePoint = transform;
 
+        if (health != null)
+            health.onDeath += OnPlayerDeath;
+
         currentState = State.Idle;
+    }
+
+    void OnDestroy()
+    {
+        if (health != null)
+            health.onDeath -= OnPlayerDeath;
+    }
+
+    void OnPlayerDeath(GameObject deadObj)
+    {
+        if (deadObj != gameObject) return;
+        Die();
     }
 
     void Update()
@@ -60,142 +77,98 @@ public class Player_X : MonoBehaviour, IDamageable
         if (!OnX || isDead) return;
 
         CheckGround();
-        UpdateAnimatorParameters();
+
+        if (Input.GetKeyDown(KeyCode.Q)&& GrenadeLauncher.instance != null)
+        {
+            Gun1 = !Gun1;
+            Gun2 = !Gun2;
+            anim.SetBool("Gun1", Gun1);
+            anim.SetBool("Gun2", Gun2);
+        }
 
         float moveX = Input.GetAxisRaw("Horizontal");
-
-        if (moveX != 0)
-            facingDir = moveX > 0 ? 1 : -1;
+        if (moveX != 0) facingDir = moveX > 0 ? 1 : -1;
 
         switch (currentState)
         {
-            case State.Idle:
-                HandleIdleState(moveX);
-                break;
-            case State.Move:
-                HandleMoveState(moveX);
-                break;
-            case State.Jump:
-                HandleJumpState(moveX);
-                break;
-            case State.Attack:
-                HandleAttackState();
-                break;
+            case State.Idle: HandleIdle(moveX); break;
+            case State.Move: HandleMove(moveX); break;
+            case State.Jump: HandleJump(moveX); break;
+            case State.Attack: HandleAttack(); break;
         }
 
         transform.localScale = new Vector3(facingDir == 1 ? 1 : -1, 1, 1);
-
         HandleFootsteps();
-    }
-
-    void UpdateAnimatorParameters()
-    {
-        anim.SetFloat(yVelocityHash, rb.velocity.y);
-        anim.SetFloat(xVelocityHash, Mathf.Abs(rb.velocity.x));
     }
 
     void CheckGround()
     {
-        onGround = Physics.Raycast(
-            groundCheckPoint.position,
-            Vector3.down,
-            groundCheckDistance,
-            whatIsGround
-        );
-
-        Debug.DrawRay(groundCheckPoint.position, Vector3.down * groundCheckDistance, onGround ? Color.green : Color.red);
+        onGround = Physics.Raycast(groundCheckPoint.position, Vector3.down, groundCheckDistance, whatIsGround);
     }
 
-    void HandleIdleState(float moveX)
+    void HandleIdle(float moveX)
     {
-
-
-        if (Input.GetKeyDown(KeyCode.J))
-            ChangeState(State.Attack);
-        else if (Input.GetKeyDown(KeyCode.Space) && onGround)
-            ChangeState(State.Jump);
-        else if (moveX != 0)
-            ChangeState(State.Move);
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        if (Input.GetKeyDown(KeyCode.J)) ChangeState(State.Attack);
+        else if (Input.GetKeyDown(KeyCode.Space) && onGround) ChangeState(State.Jump);
+        else if (moveX != 0) ChangeState(State.Move);
     }
 
-    void HandleMoveState(float moveX)
+    void HandleMove(float moveX)
     {
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            ChangeState(State.Attack);
-            return;
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && onGround)
-        {
-            ChangeState(State.Jump);
-            return;
-        }
-        else if (moveX == 0)
-        {
-            ChangeState(State.Idle);
-            return;
-        }
+        if (Input.GetKeyDown(KeyCode.J)) { ChangeState(State.Attack); return; }
+        if (Input.GetKeyDown(KeyCode.Space) && onGround) { ChangeState(State.Jump); return; }
+        if (moveX == 0) { ChangeState(State.Idle); return; }
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
     }
 
-    void HandleJumpState(float moveX)
+    void HandleJump(float moveX)
     {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            ChangeState(State.Attack);
-            return;
-        }
-
+        if (Input.GetKeyDown(KeyCode.J)) { ChangeState(State.Attack); return; }
         rb.velocity = new Vector3(moveX * speed, rb.velocity.y, 0);
-
-        if (onGround && rb.velocity.y <= 0)
-            ChangeState(State.Idle);
+        if (onGround && rb.velocity.y <= 0) ChangeState(State.Idle);
     }
 
-    void HandleAttackState()
+    void HandleAttack()
     {
-
-
-        if (triggerCalled)
-            ChangeState(State.Idle);
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        attackTimer += Time.deltaTime;
+        if (attackTimer > attackDuration) ChangeState(State.Idle);
     }
 
     void ChangeState(State newState)
     {
         if (currentState == newState) return;
-
         currentState = newState;
 
-        if (anim != null)
-        {
-            anim.SetBool("Idle", false);
-            anim.SetBool("Move", false);
-            anim.SetBool("Jump", false);
-            anim.SetBool("Attack", false);
-        }
+        anim.SetBool("Idle", false);
+        anim.SetBool("Move", false);
+        anim.SetBool("Jump", false);
+        anim.SetBool("Attack", false);
 
-        triggerCalled = false;
+        attackTimer = 0f;
 
         switch (newState)
         {
             case State.Idle:
-                rb.velocity = new Vector3(0, rb.velocity.y, 0);
-                if (anim != null) anim.SetBool("Idle", true);
+                anim.SetBool("Idle", true);
+                anim.SetBool("Gun2", Gun2);
                 break;
             case State.Move:
                 footstepTimer = 0f;
-                if (anim != null) anim.SetBool("Move", true);
+                anim.SetBool("Move", true);
+                anim.SetBool("Gun2", Gun2);
                 break;
             case State.Jump:
-                audioController.PlaySfx(audioController.Jump);
-                if (anim != null) anim.SetBool("Jump", true);
+                audioController?.PlaySfx(audioController.Jump);
+                anim.SetBool("Jump", true);
+                anim.SetBool("Gun2", Gun2);
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, 0);
                 break;
             case State.Attack:
-                rb.velocity = new Vector3(0, rb.velocity.y, 0);
-                if (anim != null) anim.SetBool("Attack", true);
-                audioController.PlaySfx(audioController.Shoot);
+                anim.SetBool("Attack", true);
+                anim.SetBool("Gun2", Gun2);
+                audioController?.PlaySfx(audioController.Shoot);
                 Shoot();
                 break;
         }
@@ -204,106 +177,53 @@ public class Player_X : MonoBehaviour, IDamageable
     void Shoot()
     {
         Vector3 origin = firePoint != null ? firePoint.position : transform.position;
-        Vector3 forwardDir = facingDir == 1 ? Vector3.right : Vector3.left;
+        Vector3 dir = facingDir == 1 ? Vector3.right : Vector3.left;
 
-        Collider[] hits = Physics.OverlapSphere(origin, 15f, whatIsEnemy);
-        Transform closest = null;
-        float closestDist = 15f;
-
-        for (int i = 0; i < hits.Length; i++)
+        if (Gun2)
         {
-            Vector3 toEnemy = hits[i].transform.position - origin;
-            float dot = Vector3.Dot(toEnemy.normalized, forwardDir);
-
-            if (dot > -0.1f)
-            {
-                float dist = toEnemy.magnitude;
-                if (dist < closestDist)
-                {
-                    closestDist = dist;
-                    closest = hits[i].transform;
-                }
-            }
+            if (GrenadeLauncher.instance != null)
+                GrenadeLauncher.instance.TryFire(origin, dir);
         }
-
-        Vector3 dir = closest != null ? (closest.position - origin).normalized : forwardDir;
-
-        GameObject bullet = Instantiate(bulletPrefab, origin, Quaternion.LookRotation(dir));
-
-        HomingBullet homing = bullet.GetComponent<HomingBullet>();
-        if (homing != null)
+        if(Gun1)
         {
-            homing.whatIsEnemy = whatIsEnemy;
-            homing.SetTarget(closest);
+            GameObject bullet = Instantiate(bulletPrefab, origin, Quaternion.LookRotation(dir));
+            FireBullet fb = bullet.GetComponent<FireBullet>();
+            if (fb != null) { fb.damage = 1f; fb.whatIsEnemy = whatIsEnemy; }
+            Destroy(bullet, bulletLifetime);
         }
-
-        Destroy(bullet, lifeTime);
     }
 
-    public void TakeDamage(float damage, Transform damageDealer)
+    public bool TakeDamage(float damage, Transform damageDealer)
     {
-        if (healthContainer == null) return;
-
-        healthContainer.TakeDamage(damage);
-
-        if (anim != null) anim.SetTrigger("Hurt");
-
-        Vector3 knockbackDir = (transform.position - damageDealer.position).normalized;
-        knockbackDir.y = 0.5f;
-        rb.velocity = knockbackDir * 8f;
-
-        if (healthContainer.IsDead())
-            Die();
+        if (health == null || isDead) return false;
+        bool took = health.TakeDamage(damage, damageDealer);
+        if (took)
+        {
+            Vector3 knockDir = (transform.position - damageDealer.position).normalized;
+            knockDir.y = 0.5f;
+            rb.velocity = knockDir * 8f;
+        }
+        return took;
     }
 
     void Die()
     {
         isDead = true;
-
-        if (anim != null)
-        {
-            anim.SetBool("Idle", false);
-            anim.SetBool("Move", false);
-            anim.SetBool("Jump", false);
-            anim.SetBool("Attack", false);
-            anim.SetBool("Dead", true);
-        }
-
-        if (rb != null)
-        {
-            rb.velocity = Vector3.zero;
-            rb.isKinematic = true;
-        }
-
-        if (GetComponent<Collider>() != null)
-            GetComponent<Collider>().enabled = false;
-
+        anim.SetBool("Dead", true);
+        rb.velocity = Vector3.zero;
+        rb.isKinematic = true;
+        GetComponent<Collider>().enabled = false;
         Destroy(gameObject, 3f);
     }
 
     void HandleFootsteps()
     {
-        if (currentState != State.Move || !onGround)
-        {
-            footstepTimer = 0f;
-            return;
-        }
-
+        if (currentState != State.Move || !onGround) { footstepTimer = 0f; return; }
         footstepTimer -= Time.deltaTime;
         if (footstepTimer <= 0f)
         {
             footstepTimer = footstepInterval;
-            audioController.PlaySfx(audioController.Walk);
+            audioController?.PlaySfx(audioController.Walk);
         }
     }
-
-
-        void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Vector3 origin = groundCheckPoint != null ? groundCheckPoint.position : transform.position;
-        Gizmos.DrawLine(origin, origin + Vector3.down * groundCheckDistance);
-    }
-
-
 }
